@@ -442,7 +442,7 @@ hr{
 .stories {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     gap: 80px;
@@ -639,7 +639,6 @@ hr{
     width: 291px;
     height: 177px;
     border-radius: 16px 16px 0px 0px;
-    background-image: url(./img/article.svg);
     background-size: cover;
     background-position: 50% 50%;
     position: absolute;
@@ -744,10 +743,6 @@ hr{
     width: 291px;
     height: 182px;
     border-radius: 16px 16px 0px 0px;
-    background-image: url(./img/article-2.svg);
-    background-size: cover;
-    background-position: 50% 50%;
-    position: absolute;
     top: 0;
     left: 0;
   }
@@ -804,10 +799,6 @@ hr{
     width: 291px;
     height: 182px;
     border-radius: 16px 16px 0px 0px;
-    background-image: url(./img/article-3.svg);
-    background-size: cover;
-    background-position: 50% 50%;
-    position: absolute;
     top: 0;
     left: 0;
   }
@@ -838,205 +829,95 @@ hr{
     white-space: nowrap;
   }
   
-  .desktop {
-    background-color: #f7f7f7;
+
+  /*footer*/
+
+  footer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    background-image: url(images/bg.png);
+    padding: 40px 120px;
+    background: #01ACFD;
+    gap: 20px;
   }
   
-  .desktop .div {
-    background-color:white;
-    width: 100%;
- 
-    position: relative;
-    margin: 0 auto;
+  .left, .right, .social {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and base size for responsiveness */
+    max-width: 400px;
   }
   
-  .desktop .overlap {
-    position: absolute;
-    width: 1439px;
-    height: 519px;
-    top: 24px;
-    margin-top: -22px;
-    left: 1px;
-    background-color: #72adc9;
-    padding-bottom: 22px;
-    width: 100%
+  .left {
+    margin: 0;
   }
   
-  .desktop .group {
-    position: relative;
-    width: 1085px;
-    height: 222px;
-    top: 123px;
-    left: 140px;
+  .left img {
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
   }
   
-  .desktop .group-2 {
-    position: absolute;
-    width: 302px;
-    height: 82px;
-    top: 0;
-    left: 0;
-  }
-  .desktop .group-22 {
-    position: absolute;
-    width: 302px;
-    height: 82px;
-    top: 0;
-    left: 0;
-  }
-  .desktop .img {
-    position: absolute;
-    width: 83px;
-    height: 82px;
-    top: 0;
-    left: 0;
-  }
-  
-  .desktop .kids-education {
-    position: absolute;
-    width: 206px;
-    top: 1px;
-    left: 94px;
+  .left-heading {
+    color: #FFF;
     font-family: Quicksand;
+    font-size: 24px; /* Adjusted for smaller screens */
     font-weight: 700;
-    color: #ffffff;
-    font-size: 42.1px;
-    letter-spacing: 0;
-    line-height: 39.5px;
+    line-height: 1.2;
+    margin-top: 10px;
   }
   
-  .desktop .text-wrapper {
-    position: absolute;
-    width: 360px;
-    top: 110px;
-    left: 7px;
+  .left p {
+    color: #FFF;
     font-family: Quicksand;
-    font-weight: 100px;
-    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .right h3 {
+    color: #FFF;
+    font-family: Quicksand;
     font-size: 18px;
-    line-height: 27px;
-  }
-  
-  .desktop .text-wrapper-2 {
-    position: absolute;
-    width: 58px;
-    top: 62px;
-    left: 579px;
-    font-family: Quicksand;
-    font-weight: 500;
-    color: #ffffff;
-    line-height: normal;
-    font-size: 20px;
-    letter-spacing: 0;
-  }
-  .text-wrapper-2:hover{
-    color:black;
-  }
-  
-  .desktop .text-wrapper-3 {
-    position: absolute;
-    width: 58px;
-    top: 107px;
-    left: 579px;
-    font-family: Quicksand;
-    font-weight: 500;
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  .text-wrapper-3:hover{
-    color:black;
-  }
-  .desktop .text-wrapper-4 {
-    position: absolute;
-    width: 81px;
-    top: 152px;
-    left: 579px;
-    color: #ffffff;
-    line-height: normal;
-    font-family: Quicksand;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0;
-  }
-  .text-wrapper-4:hover{
-    color:black;
-  }
-  .desktop .text-wrapper-5 {
-    position: absolute;
-    width: 97px;
-    top: 197px;
-    left: 579px;
-    color: #ffffff;
-    line-height: normal;
-    font-family: Quicksand;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0;
-  }
-  .text-wrapper-5:hover{
-    color:black;
-  }
-  .desktop .about-school {
-    position: absolute;
-    width: 156px;
-    top: -22px;
-    left: 579px;
-    font-family: Quicksand;
     font-weight: 700;
-    color: #ffffff;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
+    margin-bottom: 10px;
   }
   
-  .desktop .span {
+  .right li {
+    margin-top: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
     font-family: Quicksand;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 24px;
-    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 500;
   }
   
-  .desktop .group-3 {
-    position: absolute;
-    width: 193px;
+  .social {
+    margin-right: 80px; /* Align center for better layout on smaller screens */
+  }
+  
+  .social h3 {
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+  }
+  
+  .social img {
+    margin: 10px 10px;
+    width: 40px;
     height: 40px;
-    top: 62px;
-    left: 878px;
   }
   
-  
-  
-  .desktop .heading-keep-in {
-    position: absolute;
-    width: 177px;
-    height: 26px;
-    top: 4px;
-    left: 878px;
-    font-family: Quicksand;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 26px;
-    letter-spacing: 0;
-    line-height: 26px;
-    white-space: nowrap;
-  }
-  
-
-
-
-
-
-
-
-
 
 /* Responsive styles */
 @media (max-width: 576px) {
@@ -1145,4 +1026,24 @@ flex-grow: 1;
         margin-bottom: 36px;
     }
 
+}
+
+@media (max-width: 576px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding:  40px  20px;
+  }
+
+  .left, .right, .social {
+    max-width: 100%;
+  }
+
+  .left img, .social img {
+    margin: 0 auto;
+  }
+
+  .right h3, .social h3 {
+    margin-top: 20px;
+  }
 }
